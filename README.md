@@ -34,9 +34,9 @@ g++ -std=c++17 -IClient/inc -IFileParser/inc -IpngParser/inc -IjpegParser/inc Cl
 #run server
 ./serverAPP
 
-#run client
-./clientAPP (pathToFile)
-
+# Run client (with image file path as argument)
+./clientAPP path/to/image.png
+```
 ## Build & Run
 
 ```bash
