@@ -12,6 +12,8 @@ Runs as a TCP/IP server
 - Zlib (for PNG compression support)
 
 ## Compile in terminal
+```bash
+# Build server
 server:
  g++ -std=c++17 \       
   -IjpegParser/inc \
@@ -25,11 +27,14 @@ server:
   -o serverAPP \
   -lpthread -lz
 
+# Build client
 Client:
 g++ -std=c++17 -IClient/inc -IFileParser/inc -IpngParser/inc -IjpegParser/inc Client/sr/Client.cpp Client/sr/main.cpp -o clientAPP -lpthread -lz 
 
+#run server
 ./serverAPP
 
+#run client
 ./clientAPP (pathToFile)
 
 ## Build & Run
