@@ -1,4 +1,4 @@
-# tcp-ip_server_functional_cpp
+# TCP-IP_SERVER_FUNCTIONAL_CPP
 # EditImageServer
 
 A C++ project for parsing and editing PNG images — including grayscale conversion, chunk analysis, reading/writing PNG files, and more.  
