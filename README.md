@@ -37,7 +37,7 @@ g++ -std=c++17 -IClient/inc -IFileParser/inc -IpngParser/inc -IjpegParser/inc Cl
 # Run client (with image file path as argument)
 ./clientAPP path/to/image.png
 ```
-## Build & Run
+## Build & Run unit tests
 
 ```bash
 # Configure and build the project
@@ -45,5 +45,5 @@ cmake -S . -B build
 cmake --build build
 
 # Run unit tests
-cd build
-ctest --output-on-failure
+ctest --test-dir build -R PngParserTest
+
